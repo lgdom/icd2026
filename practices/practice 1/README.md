@@ -23,7 +23,7 @@ Así mismo, contiene los metadatos, el diccionario de datos y un conjunto de cat
 
 ---
 
-## Estructura del Repositorio
+## Estructura de la práctica
 
 ```text
 practice 1/
