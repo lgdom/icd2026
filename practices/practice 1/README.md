@@ -2,6 +2,7 @@
 **Introducción a la Ciencia de Datos 2026**  
 Posgrado en Ciencias de la Computación — CICESE  
 **Profesor:** Dr. Irvin Hussein López Nava  
+**Estudiante:** Luis Felipe García Domínguez  
 
 ---
 
