@@ -1,0 +1,1 @@
+Para evitar duplicar 95 MB en el repositorio de GitHub, esta práctica reutiliza los datos crudos oficiales alojados en `practices/practice 1/data/`.
