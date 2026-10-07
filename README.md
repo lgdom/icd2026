@@ -20,6 +20,9 @@ Este repositorio contiene el conjunto de materiales, prácticas de laboratorio, 
 icd2026/
 ├── book/                  # Revisión del libro asignado
 ├── classes/               # Cuadernos y materiales vistos en clase
+├── homework/              # Tareas
+│   ├── preprocesamiento/  # Tarea 2: Preprocesamiento de Datos (Breast Cancer Wisconsin)
+│   └── regresion/         # Tarea 3: Regresión Lineal y Clasificación (Wine Quality)
 ├── practices/             # Prácticas y análisis de datos
 │   ├── practice 1/        # Práctica 1: Análisis Exploratorio de Datos (ATUS 2025 - INEGI)
 │   └── practice 2/        # Práctica 2: Preprocesamiento de Datos (ATUS 2025 - INEGI)
