@@ -1,4 +1,4 @@
-# Tarea 4: Métricas de Clasificación y Costo Económico
+# Tarea 4: Métricas de Clasificación
 **Introducción a la Ciencia de Datos 2026**  
 Posgrado en Ciencias de la Computación — CICESE  
 **Profesor:** Dr. Irvin Hussein López Nava  
