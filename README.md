@@ -20,7 +20,8 @@ Este repositorio contiene el conjunto de materiales, prácticas de laboratorio, 
 icd2026/
 ├── book/                  # Revisión del libro asignado
 ├── classes/               # Cuadernos y materiales vistos en clase
-├── homework/              # Tareas
+├── homework/              # Tareas del curso
+│   ├── metricas/          # Tarea 4: Métricas de Clasificación y Costo Económico (Bank Marketing)
 │   ├── preprocesamiento/  # Tarea 2: Preprocesamiento de Datos (Breast Cancer Wisconsin)
 │   └── regresion/         # Tarea 3: Regresión Lineal y Clasificación (Wine Quality)
 ├── practices/             # Prácticas y análisis de datos
@@ -29,6 +30,19 @@ icd2026/
 ├── project/               # Proyecto final de la materia
 └── README.md              # Índice general y documentación del repositorio
 ```
+
+---
+
+## Tareas
+
+- **[Tarea 2: Preprocesamiento de Datos](homework/preprocesamiento/)**  
+  Auditoría, limpieza, imputación de valores faltantes y reducción de dimensionalidad mediante Análisis de Componentes Principales (PCA) sobre el conjunto de datos de cáncer de mama de Wisconsin (*Breast Cancer Wisconsin*).
+
+- **[Tarea 3: Regresión Lineal y Clasificación](homework/regresion/)**  
+  Modelado continuo mediante regresión simple y múltiple sobre calidad de vino tinto (*Wine Quality*), y evaluación de las limitaciones de usar regresión lineal para clasificación binaria con clases desbalanceadas.
+
+- **[Tarea 4: Métricas de Clasificación](homework/metricas/)**  
+  Evaluación de modelos de clasificación con clases fuertemente desbalanceadas (*Bank Marketing*), prevención de fuga de información (*data leakage*), análisis comparativo de curvas ROC vs. Precision-Recall y optimización de umbrales bajo una función de costo-beneficio económico.
 
 ---
 
