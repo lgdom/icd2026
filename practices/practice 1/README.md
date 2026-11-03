@@ -36,7 +36,6 @@ practice 1/
 ├── notebooks/
 │   └── practice-01.ipynb                            # Cuaderno principal con el EDA completo
 ├── requirements.txt                                 # Dependencias de Python requeridas
-├── .gitignore                                       # Archivos excluidos del control de versiones
 └── README.md                                        # Documentación del proyecto
 ```
 
