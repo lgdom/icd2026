@@ -26,7 +26,8 @@ icd2026/
 │   └── regresion/         # Tarea 3: Regresión Lineal y Clasificación (Wine Quality)
 ├── practices/             # Prácticas y análisis de datos
 │   ├── practice 1/        # Práctica 1: Análisis Exploratorio de Datos (ATUS 2025 - INEGI)
-│   └── practice 2/        # Práctica 2: Preprocesamiento de Datos (ATUS 2025 - INEGI)
+│   ├── practice 2/        # Práctica 2: Preprocesamiento de Datos (ATUS 2025 - INEGI)
+│   └── practice 3/        # Práctica 3: Clasificación de Deserción y Éxito Académico (UCI 697)
 ├── project/               # Proyecto final de la materia
 └── README.md              # Índice general y documentación del repositorio
 ```
@@ -53,6 +54,9 @@ icd2026/
 
 - **[Práctica 2: Preprocesamiento de Datos](practices/practice%202/)**  
   Implementación de técnicas de limpieza e imputación, aumento de datos mediante SMOTE-NC para clases desbalanceadas y extracción de características temporales y de dominio vial.
+
+- **[Práctica 3: Clasificación de Deserción y Éxito Académico](practices/practice%203/)**  
+  Diseño de pipelines de preprocesamiento, ajuste de hiperparámetros con validación cruzada estratificada y comparación de cinco familias de clasificadores (Árbol de Decisión, Naive Bayes, kNN, SVM y Regresión Logística) para predecir la deserción estudiantil al cierre del primer semestre (*Predict Students' Dropout and Academic Success*, UCI 697).
 
 ---
 
