@@ -10,11 +10,29 @@ Posgrado en Ciencias de la Computación — CICESE
 
 Este repositorio contiene el desarrollo de la **Práctica 3**, enfocada en construir y comparar distintos clasificadores supervisados para predecir, al cierre del **primer semestre**, la situación final de un estudiante de educación superior (`Dropout`, `Enrolled` o `Graduate`).
 
-- **Conjunto de datos base:** [UCI Machine Learning Repository — Predict Students' Dropout and Academic Success (ID: 697)](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success), recopilado por el Instituto Politécnico de Portalegre (Portugal).
-- **Conjunto de entrenamiento (`desercion-entrenamiento.csv`):** 3,539 estudiantes y 38 columnas (`id`, 36 atributos y `Target`).
-- **Conjunto de prueba (`desercion-prueba.csv`):** 885 estudiantes y 37 columnas (`id` y 36 atributos, sin etiqueta `Target`).
-- **Restricción temporal (escenario principal):** Exclusión de las 6 variables correspondientes al segundo semestre para predecir el riesgo de abandono al cierre del primer semestre (30 atributos originales + indicadores derivados del primer semestre).
 - **Métrica principal de evaluación:** `F1 macro` bajo validación cruzada estratificada de 10 pliegues (`StratifiedKFold(n_splits=10, shuffle=True, random_state=42)`).
+- **Restricción temporal (escenario principal):** Exclusión de las 6 variables correspondientes al segundo semestre para predecir el riesgo de abandono al cierre del primer semestre (30 atributos originales + indicadores derivados del primer semestre).
+
+---
+
+## Descripción del Conjunto de Datos
+
+El conjunto de datos proviene del repositorio oficial **UCI Machine Learning Repository**: [*Predict Students' Dropout and Academic Success (ID: 697)*](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success), recopilado por el **Instituto Politécnico de Portalegre** (Portugal) a partir de registros administrativos y académicos de estudiantes inscritos en diversas licenciaturas entre los ciclos escolares 2008/2009 y 2018/2019 (Realinho et al., 2022).
+
+- **Total de registros originales:** 4,424 estudiantes, sin valores faltantes (`0` nulos), divididos para esta práctica en:
+  - **`desercion-entrenamiento.csv` (80 %):** 3,539 estudiantes y 38 columnas (`id`, 36 atributos predictivos y la variable objetivo `Target`).
+  - **`desercion-prueba.csv` (20 %):** 885 estudiantes y 37 columnas (`id` y 36 atributos predictivos, sin la columna `Target`).
+- **Variable objetivo (`Target`):** Categórica de 3 clases con desbalance moderado en entrenamiento:
+  - `Graduate` (graduado): 1,781 estudiantes (**50.32 %**)
+  - `Dropout` (desertor): 1,137 estudiantes (**32.13 %**)
+  - `Enrolled` (aún inscrito): 621 estudiantes (**17.55 %**)
+- **Atributos predictivos (36 variables en total: 30 disponibles al cierre del 1er semestre + 6 del 2do semestre):**
+  - **9 Categóricos nominales** (almacenados como códigos enteros de catálogo): estado civil, modo de solicitud, carrera (`Course`), estudios previos, nacionalidad y códigos de escolaridad y ocupación de madre y padre.
+  - **8 Categóricos binarios (`0` / `1`):** turno diurno/vespertino, desplazado, necesidades educativas especiales, deudor (`Debtor`), colegiatura al corriente (`Tuition fees up to date`), género, becario (`Scholarship holder`) y estudiante internacional.
+  - **1 Categórico ordinal:** orden de preferencia en la solicitud (`Application order`).
+  - **6 Numéricos discretos (al 1er semestre):** edad al inscribirse (`Age at enrollment`) y las 5 variables de conteo de unidades curriculares del 1er semestre (acreditadas, inscritas, evaluadas, aprobadas y sin evaluación).
+  - **6 Numéricos continuos (al 1er semestre):** calificación de estudios previos, nota de admisión, promedio ponderado del 1er semestre (`Curricular units 1st sem (grade)`) e indicadores macroeconómicos nacionales al ingreso (`Unemployment rate`, `Inflation rate`, `GDP`).
+  - **6 Variables del 2do semestre** *(excluidas del escenario principal y evaluadas en la Sección 7)*: los 5 conteos de unidades curriculares y el promedio ponderado del segundo semestre.
 
 ---
 
