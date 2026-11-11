@@ -28,7 +28,7 @@ icd2026/
 │   ├── practice 1/        # Práctica 1: Análisis Exploratorio de Datos (ATUS 2025 - INEGI)
 │   ├── practice 2/        # Práctica 2: Preprocesamiento de Datos (ATUS 2025 - INEGI)
 │   ├── practice 3/        # Práctica 3: Clasificación de Deserción y Éxito Académico (UCI 697)
-│   └── practice 4/        # Práctica 4: Métodos de Ensamble y Clasificación en Desbalance (UCI 697 y Bank Marketing)
+│   └── practice 4/        # Práctica 4: Meta aprendizaje (UCI 697 y Bank Marketing)
 ├── project/               # Proyecto final de la materia
 └── README.md              # Índice general y documentación del repositorio
 ```
@@ -37,7 +37,7 @@ icd2026/
 
 ## Tareas
 
-- **[Tarea 2: Preprocesamiento de Datos](homework/preprocesamiento/)**  
+- **[Tarea 2: Preprocesamiento de Datos](homework/preprocesamiento/)**
   Auditoría, limpieza, imputación de valores faltantes y reducción de dimensionalidad mediante Análisis de Componentes Principales (PCA) sobre el conjunto de datos de cáncer de mama de Wisconsin (*Breast Cancer Wisconsin*).
 
 - **[Tarea 3: Regresión Lineal y Clasificación](homework/regresion/)**  
@@ -59,7 +59,7 @@ icd2026/
 - **[Práctica 3: Clasificación de Deserción y Éxito Académico](practices/practice%203/)**  
   Diseño de pipelines de preprocesamiento, ajuste de hiperparámetros con validación cruzada estratificada y comparación de cinco familias de clasificadores (Árbol de Decisión, Naive Bayes, kNN, SVM y Regresión Logística) para predecir la deserción estudiantil al cierre del primer semestre (*Predict Students' Dropout and Academic Success*, UCI 697).
 
-- **[Práctica 4: Métodos de Ensamble y Clasificación en Desbalance](practices/practice%204/)**  
+- **[Práctica 4: Meta aprendizaje](practices/practice%204/)**  
   Evaluación de familias de ensamble (Bagging, Boosting y Combinación heterogénea) frente a modelos base en deserción estudiantil (UCI 697), y búsqueda del mejor clasificador para captación bancaria (*Bank Marketing*, 41,188 instancias) con optimización de umbrales de decisión (`TunedThresholdClassifierCV`).
 
 ---
