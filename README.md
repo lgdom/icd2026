@@ -38,7 +38,10 @@ icd2026/
 │   ├── practice 2/        # Práctica 2: Preprocesamiento de Datos (ATUS 2025 - INEGI)
 │   ├── practice 3/        # Práctica 3: Clasificación de Deserción y Éxito Académico (UCI 697)
 │   └── practice 4/        # Práctica 4: Meta aprendizaje (UCI 697 y Bank Marketing)
-├── project/               # Proyecto final de la materia
+├── project/               # Proyecto final: Identificación de Especies de Aves por Audio (BirdCLEF 2026)
+│   ├── data/              # Metadatos, subconjuntos y características precalculadas (30 especies)
+│   ├── notebooks/         # Cuaderno principal del proyecto (project.ipynb)
+│   └── scripts/           # Script reproducible de extracción (MFCCs + Perch en float16)
 └── README.md              # Índice general y documentación del repositorio
 ```
 
@@ -73,6 +76,13 @@ icd2026/
 
 - **[Práctica 4: Meta aprendizaje](practices/practice%204/)**  
   Evaluación de familias de ensamble (Bagging, Boosting y Combinación heterogénea) frente a modelos base en deserción estudiantil (UCI 697), y búsqueda del mejor clasificador para captación bancaria (*Bank Marketing*, 41,188 instancias) con optimización de umbrales de decisión (`TunedThresholdClassifierCV`).
+
+---
+
+## Proyecto Final
+
+- **[Identificación de Especies de Aves por Audio (BirdCLEF 2026)](project/)**  
+  Clasificación bioacústica de **30 especies de aves** (15 graves vs. 15 agudas; 4,793 grabaciones y 15,834 ventanas de 5 s filtradas mediante VAD en 350–8,500 Hz) comparando descriptores clásicos (**MFCCs + deltas** con `SVM` y `Random Forest`) frente a representaciones profundas preentrenadas (**Perch**, 1,280 dimensiones) bajo validación cruzada agrupada por archivo (`StratifiedGroupKFold` sobre `filename`) y evaluación de degradación en campo real (`Alta Calidad`, `Media Calidad` y `Estrés`). Incluye análisis cualitativo de errores, evaluación agregada por grabación completa y script reproducible de extracción ([extract_features.py](project/scripts/extract_features.py)).
 
 ---
 
