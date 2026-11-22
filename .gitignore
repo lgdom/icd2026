@@ -52,3 +52,10 @@ ENV/
 # Local temporary tools and scratch files
 local tools/
 
+# Project raw audio and large data artifacts (> 50 MB)
+project/data/train_audio/
+project/data/*.ogg
+project/data/*.wav
+project/data/*.zip
+project/data/*.tar.gz
+
