@@ -59,3 +59,6 @@ project/data/*.wav
 project/data/*.zip
 project/data/*.tar.gz
 
+# Project report and presentation working documents
+project/documents/
+
